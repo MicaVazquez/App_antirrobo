@@ -1,0 +1,7 @@
+{
+  "name": "antirrobo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
