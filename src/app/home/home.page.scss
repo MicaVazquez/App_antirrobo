@@ -1,27 +1,91 @@
-#container {
-  text-align: center;
+// #container {
+//   text-align: center;
+//   font-family: "Orbitron", sans-serif;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+
+// #container strong {
+//   font-size: 20px;
+//   line-height: 26px;
+// }
+
+// #container p {
+//   font-size: 16px;
+//   line-height: 22px;
+
+//   color: #8c8c8c;
+
+//   margin: 0;
+// }
+
+// #container a {
+//   text-decoration: none;
+// }
+
+// ion-content {
+//   --background: #faf7f0; /* Fondo rosa */
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+// }
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 16px;
+  background: #b8001f;
+  border-bottom: 1px solid #ccc;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.button-container {
+  display: flex;
+  align-items: center;
+}
+.alarm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; // Centra verticalmente
+  height: 70vh; // Ocupa la mayor parte de la pantalla
+  margin-top: 0; // Elimina el margen superior
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.fullscreen-button {
+  width: 240px; // Más grande
+  height: 240px; // Más grande
+  border-radius: 50%;
+  font-size: 3.5rem; // Ícono más grande
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  border: none;
+  margin: 0 auto 20px auto; // Centrado horizontal
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: linear-gradient(135deg, #72a6be 60%, #eb445a 100%);
+  color: #fff;
 }
 
-#container a {
-  text-decoration: none;
+.fullscreen-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+}
+.alarm-status {
+  font-size: 1.2rem;
+  margin-top: 16px;
+  color: #c9c2c2;
+}
+
+ion-content {
+  --background: #384b70;
 }

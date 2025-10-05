@@ -1,0 +1,127 @@
+ion-content {
+  --background: #384b70;
+  font-family: "Orbitron", sans-serif;
+  #header {
+    height: 33%;
+    background: #b8001f;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+
+    #app-bar {
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      ion-icon {
+        font-size: 24px;
+        margin-left: -5px;
+      }
+      #logo {
+        width: 60px;
+        height: 60px;
+        background-color: #b8001f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+
+        img {
+          width: 500%;
+        }
+      }
+    }
+    h1 {
+      font-size: 19px;
+      margin-bottom: 5px;
+    }
+  }
+  .wrapper {
+    position: absolute;
+    top: 26%;
+    left: 4%;
+    right: 4%;
+
+    .form-wrapper {
+      box-shadow: none;
+      border-radius: 20px;
+      padding: 15px 10px;
+
+      ion-item {
+        --padding-start: 10px;
+        --highlight-height: 0;
+        --padding-top: 0;
+        --min-height: 40px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        ion-icon {
+          font-size: 18px;
+        }
+        ion-input {
+          margin-left: 10px;
+          font-size: 14px;
+        }
+      }
+
+      ion-button {
+        margin-top: 25px;
+      }
+
+      .line-text {
+        padding: 0 30px;
+        position: relative;
+        height: 20px;
+        margin-top: 30px;
+
+        .lines {
+          height: 1px;
+          background: #858585;
+          display: block;
+        }
+
+        .text {
+          position: absolute;
+          top: -7px;
+          transform: translateX(-50px);
+          background: #e0dfe6;
+          padding: 0 16px;
+          font-size: 12px;
+          font-weight: 500;
+          color: #5e5e5e;
+        }
+      }
+
+      .social-wrapper {
+        box-shadow: none;
+        border-radius: 20px;
+
+        .socials {
+          display: flex;
+          justify-content: center;
+          padding: 5px;
+
+          ion-button {
+            margin: 0 5px;
+            --padding-start: 12px;
+            --padding-end: 12px;
+            ion-icon {
+              font-size: 18px;
+            }
+          }
+
+          .btn-fb {
+            --background: #567aa3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.error-text {
+  color: #ff0000;
+  font-size: 12px;
+  margin-left: 10px;
+}
